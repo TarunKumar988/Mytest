@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/sysadmin/gitTest/Mytest/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/home/sysadmin/gitTest2/Mytest/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/home/sysadmin/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/52e8ca2db85ace1296535e06cd26f78f/res/values-v21/values-v21.xml",

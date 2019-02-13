@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/sysadmin/gitTest/Mytest/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si/values-si.xml",
+            "outputFile": "/home/sysadmin/gitTest2/Mytest/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si/values-si.xml",
             "map": [
                 {
                     "source": "/home/sysadmin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a97201a5d51f532968a576d92d441495/res/values-si/values-si.xml",

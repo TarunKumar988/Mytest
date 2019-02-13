@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity  {
    static JSONArray jsonArray;
    static String arr[];
    static Context con;
-   Button click,show;
+  static Button click,show;
    static Intent i;
    static ProgressBar progressBar;
     MyAsync myAsync=new MyAsync();
@@ -79,14 +79,20 @@ static char a[];
 
     public void ClickedMe(View view) {
         myAsync.execute();
-        show.setVisibility(View.VISIBLE);
-        click.setVisibility(View.INVISIBLE);
+
     }
 
     public void Show(View view) {
-        ArrayAdapter a=new ArrayAdapter(this,R.layout.view_item,R.id.txt,arr);
-        ls.setAdapter(a);
-        ls.setOnItemClickListener(new mylistner());
+
+      if (arr.length>1) {
+          ArrayAdapter a = new ArrayAdapter(this, R.layout.view_item, R.id.txt, arr);
+          ls.setAdapter(a);
+          ls.setOnItemClickListener(new mylistner());
+      }
+      else
+      {
+          Toast.makeText(con, "Array is null  " , Toast.LENGTH_SHORT).show();
+      }
 
     }
 
@@ -98,9 +104,18 @@ static char a[];
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            Toast.makeText(MainActivity.con, "Data clicked : "+MainActivity.arr[position], Toast.LENGTH_SHORT).show();
-           i=new Intent(MainActivity.con,Second.class);
+//            Toast.makeText(MainActivity.con, "Data clicked : "+MainActivity.arr[position], Toast.LENGTH_SHORT).show();
+            i=new Intent(MainActivity.con,Second.class);
             i.putExtra("Name" , MainActivity.arr[position]);
+            Toast.makeText(MainActivity.this, "Wait for 3 Seconds  ...  ", Toast.LENGTH_SHORT).show();
+            try
+            {
+                Thread.sleep(3000);
+            }
+            catch(Exception e)
+            {
+                e.getStackTrace();
+            }
             startActivity(i);
             finish();
 

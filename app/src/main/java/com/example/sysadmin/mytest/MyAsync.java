@@ -33,7 +33,7 @@ public class MyAsync extends AsyncTask<String,Integer,String> {
     protected void onProgressUpdate(Integer... values) {
       MainActivity.progressBar.setProgress(values[0]);
     }
-
+git
     @Override
     protected String doInBackground(String... strings) {
 
@@ -75,15 +75,15 @@ public class MyAsync extends AsyncTask<String,Integer,String> {
     protected void onPostExecute(String s) {
         try
         {
-            Thread.sleep(5000);
+            Thread.sleep(3000);
         }
         catch (Exception e)
         {
-            Toast.makeText(MainActivity.con, "Exception occourse  "+e, Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.con, "Exception "+e, Toast.LENGTH_SHORT).show();
         }
-
        MainActivity.ls.setVisibility(View.VISIBLE);
        MainActivity.progressBar.setVisibility(View.GONE);
+        MainActivity.show.setVisibility(View.VISIBLE);
 
     }
 }

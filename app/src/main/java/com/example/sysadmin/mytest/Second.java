@@ -1,11 +1,14 @@
 package com.example.sysadmin.mytest;
 
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,8 +26,11 @@ import org.json.JSONObject;
 public class Second extends AppCompatActivity {
 EditText email,pass;
 TextView forgetPassword;
+ImageView imageView;
+
     static String name;
     static String password;
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,8 +39,10 @@ TextView forgetPassword;
         pass=findViewById(R.id.password);
         email=findViewById(R.id.name);
         forgetPassword=findViewById(R.id.forgot_password);
+        imageView=findViewById(R.id.imageView);
 
         name=getIntent().getExtras().getString("Name");
+
 
         email.setText((String)name);
 

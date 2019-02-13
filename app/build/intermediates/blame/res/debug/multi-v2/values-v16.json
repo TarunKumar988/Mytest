@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/sysadmin/gitTest/Mytest/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/sysadmin/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/52e8ca2db85ace1296535e06cd26f78f/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/sysadmin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a97201a5d51f532968a576d92d441495/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        }
+    ]
+}
